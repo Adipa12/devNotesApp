@@ -1,0 +1,28 @@
+CORS ==> cross origin resourse sharing
+--> fronend
+--> backend
+
+=> cors allows you to define which client or frotend shold be able to request you .
+
+cors({origin: 'https:notes.app.netify.com'}) ==> only localhost:3000 can request you
+cors({ origin: '*' }) => any fronend can request you 
+
+------------------------------------------------------------------------------------------------
+planning for backend project====>
+==> register and ligin system
+==> user schema and model
+==> while registering will be hashing the password
+==> ehile login will comparing the password using bcrypt and create jwt token 
+
+if want to use import/export like react ==> package.json => "type":"module"
+
+noteModel :
+title 
+description
+status
+
+--> 3 kind of relationships==> 1 to 1, 1 to many and many to many
+but in that case user is one and notes are many show we use
+--> 1 to many relationship (notes are dependeble so store the user id in notes)
+- user
+- notes(user Id)
